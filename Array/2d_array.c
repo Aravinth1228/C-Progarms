@@ -6,6 +6,7 @@ int main(){
     scanf("%d",&n);
     printf("\nEnter the  column:");
     scanf("%d",&m);
+            int a[n][m],b[n][m],c[n][m];
     for (i=0;i<n;i++){
         for(j=0;j<m;j++){
             printf("\nEnter the value a[%d][%d] :",i,j);
