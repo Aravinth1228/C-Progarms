@@ -25,4 +25,7 @@ int main(){
     } else {
         printf("%d is not a happy number.\n", n);
     }
-}
+}/*
+Enter a number: 19
+19 is a happy number.
+*/```

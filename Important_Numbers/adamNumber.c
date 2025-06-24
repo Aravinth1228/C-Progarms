@@ -26,4 +26,7 @@ int main() {
     } else {
         printf("%d is not an Adam number.\n", n);
     }
-}
+}/*
+Enter a number: 12
+12 is an Adam number.
+*/
