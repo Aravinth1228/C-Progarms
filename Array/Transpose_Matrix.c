@@ -19,8 +19,8 @@ int main() {
         }
     }
     printf("Normal of the matrix:\n");
-    for (int i = 0; i < c; i++) {
-        for (int j = 0; j < r; j++) {
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
             printf("%d ", matrix[i][j]);
         }
         printf("\n");
