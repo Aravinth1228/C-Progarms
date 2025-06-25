@@ -1,11 +1,20 @@
 #include<stdio.h>
 #include<string.h>
-int main(){
-    char str [100];
+#include<ctype.h>
+
+int main() {
+    char str[100];
     printf("Enter a string: ");
     gets(str);
-   if()
 
+    for(int i = 0; str[i] != '\0'; i++) {
+        char ch = tolower(str[i]);
+        if((ch >= 'a' && ch <= 'z') && ch != 'a' && ch != 'e' && ch != 'i' && ch != 'o' && ch != 'u') {
+            str[i] = '#';
+        }
+    }
+
+    printf("%s\n", str);
     return 0;
 }/*
 Hello
