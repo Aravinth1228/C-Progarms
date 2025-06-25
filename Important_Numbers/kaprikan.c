@@ -15,7 +15,7 @@ void kaprekar(int n) {
     int right = sq %  divisor; 
     int left = sq / divisor;  
 
-    if (right > 0 && left + right == n)
+    if ( left + right == n)
         printf("%d is a Kaprekar number.\n", n);
     else
         printf("%d is not a Kaprekar number.\n", n);
@@ -28,3 +28,7 @@ int main() {
     kaprekar(n);
     return 0;
 }
+/*
+Enter a number: 45
+45 is a Kaprekar number.
+*/
