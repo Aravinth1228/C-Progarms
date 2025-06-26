@@ -31,10 +31,24 @@ int main(){
    printf("\nEnter a Name:%s",o.name);
    printf("\nEnter a age:%d",o.age);
    printf("\nEnter a Percentage:%0.2f",o.per);
-   printf("\n-------------------------");
+   printf("\n----------------------------------");
    printf("\nEnter a Name:%s",o2.name);
    printf("\nEnter a age:%d",o2.age);
    printf("\nEnter a Percentage:%0.2f",o2.per);
    total();
     return 0;
 }
+/*
+
+Enter a Name:Aravinth
+Enter a age:20
+Enter a Percentage:98.40
+-------------------------
+Enter a Name:Shree
+Enter a age:20
+Enter a Percentage:95.40
+Mark1 :90
+Mark2 :97
+Mark3 :60
+Total :247
+*/

@@ -1,12 +1,14 @@
 #include<stdio.h>
 union demo{
-    int a;
+    int a;/*1*/
     char b;
 
 }d;
 int main(){
-   d.a=65;
-   d.b='M';
+
+   d.a=50;
+   d.b='c';
+   
    printf("\nValue of A:%d",d.a);
    printf("\nValue of B:%c",d.b);
     return 0;

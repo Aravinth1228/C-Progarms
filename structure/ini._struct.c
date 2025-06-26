@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 struct student{
-  char *name;
+  char name[100];
   int age;
   float per;
 };
