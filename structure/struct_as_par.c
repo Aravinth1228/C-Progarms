@@ -3,7 +3,7 @@ struct student{
    char *name;
    int age;
    float per;
-   } ;
+   };
 
   void display(struct student o){
   printf("\nName :%s",o.name);
