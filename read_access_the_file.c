@@ -2,7 +2,7 @@
 int main(){
     FILE *fp;
     int ch;
-    fp = fopen("C:\\Users\\sudha\\OneDrive\\Desktop\\C\\C-Progarms\\aravinth.txt","r");
+    fp = fopen("C:\\Users\\sudha\\OneDrive\\Desktop\\any.txt","r");
     if (fp == NULL) {
         printf("#Error opening file.\n");
     

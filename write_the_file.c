@@ -5,7 +5,7 @@ int main(){
     if (fp == NULL) {
         printf("#Error opening file.\n");
     }
-    fprintf(fp, "\nI'm Aravinth\n");
+    fprintf(fp, "\ngood morning\n");
     fclose(fp);
     return 0;
 }
