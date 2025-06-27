@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    FILE *fp;
+    fp = fopen("C:\\Users\\sudha\\OneDrive\\Desktop\\C\\C-Progarms\\aravinth.txt", "a");
+    if (fp == NULL) {
+        printf("#Error opening file.\n");
+    }
+    fprintf(fp, "\nI'm Aravinth\n");
+    fclose(fp);
+    return 0;
+}
