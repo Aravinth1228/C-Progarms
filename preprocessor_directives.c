@@ -5,9 +5,9 @@
  printf("\n" #a " HOW ARE YOU?\n")
 int main(){
     for(int i=0; i<LIMITE; i++){
-        printf("Hello World!\n");
+        printf("%d  \n",i);
     }
-    printf("%s", MSG);
+    printf("%s\n", MSG);
     custom_message("HI SAI");
 
     printf("\nFile :"__FILE__);
@@ -16,3 +16,19 @@ int main(){
     printf("\nTime :%s", __TIME__);
     return 0;
 }
+/*
+0  
+1  
+2
+3
+4
+HI IM ARAVINTH
+
+
+"HI SAI" HOW ARE YOU?
+
+File :c:\Users\sudha\OneDrive\Desktop\C\C-Progarms\preprocessor_directives.c
+Line :14
+Date :Jun 27 2025
+Time :14:11:24
+*/

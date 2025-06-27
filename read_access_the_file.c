@@ -1,11 +1,13 @@
 #include<stdio.h>
 int main(){
     FILE *fp;
-    int ch;
+   char ch;
     fp = fopen("C:\\Users\\sudha\\OneDrive\\Desktop\\any.txt","r");
     if (fp == NULL) {
         printf("#Error opening file.\n");
-    
+
+    } else {
+        printf("File opened successfully.\n");
     }
    while(1){
      ch = fgetc(fp);
