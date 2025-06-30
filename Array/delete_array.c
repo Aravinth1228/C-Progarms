@@ -14,10 +14,11 @@ int main(){
             for(j=i;j<n-1;j++){
                 arr[j]=arr[j+1];
             }
-                  }
+            n--;
+        }
     }
     printf("The new array is\n");
-    for(i=0;i<n-1;i++){
+    for(i=0;i<n;i++){
         printf("%d ",arr[i]);
     }
     printf("\n");
