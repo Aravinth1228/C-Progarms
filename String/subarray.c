@@ -16,4 +16,7 @@ int main() {
         printf("Not Found");
     }
     return 0;
-}
+}/*
+Enter the first string: aravinth is a good boy
+Enter the second string: boy
+Found*/
