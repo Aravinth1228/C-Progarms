@@ -12,10 +12,9 @@ int main(){
     printf("Enter the new element:");
     scanf("%d", &newElement);
     for(i = n; i > pos; i--) {
-        arr[i] = arr[i - 1];
+        arr[i] = arr[i-1];
     }
     arr[pos] = newElement;
-    n++;
     printf("Array after insertion:\n");
     for(i = 0; i < n; i++) {
         printf("%d ", arr[i]);
