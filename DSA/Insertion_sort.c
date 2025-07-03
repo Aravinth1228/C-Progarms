@@ -17,17 +17,22 @@ int main(){
             j--;
         }
         a[j + 1] = temp;
+           printf("Insertion sort:");
+         for(int i=0;i<n;i++){
+            printf("%d ",a[i]);
      }
-     printf("Sorted array:");
-     for(i=0;i<n;i++){
-         printf("%d ",a[i]);
-     }
+     printf("\n");
+    }
+    
 }/*
 Enter the limit:5
-Enter the values:3
-2
+Enter the values:2
+3
 1
-5 
+5
 4
-Sorted array:1 2 3 4 5 
+Insertion sort:2 3 1 5 4 
+Insertion sort:1 2 3 5 4
+Insertion sort:1 2 3 5 4
+Insertion sort:1 2 3 4 5
 */

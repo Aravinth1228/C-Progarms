@@ -17,23 +17,33 @@ int j,temp;
                 a[j]=a[j+1];
                 a[j+1]=temp;
             }
+            printf("The sorted array is:");
+            for(int i=0;i<n;i++){
+                printf("%d ",a[i]);
+            }
+            printf("\n");
+            
         }
     }
-    printf("The sorted array is:");
-    for(i=0;i<n;i++){
-        printf("%d ",a[i]);
-    }
+    
     return 0;
 }/*
 Enter the size of A:
-7
+5
 Enter the values of A :
-
-9 
-8
-7
+2
+3
 4
 5
-6
 1
-The sorted array is:1 4 5 6 7 8 9 */
+The sorted array is:2 3 4 5 1 
+The sorted array is:2 3 4 5 1
+The sorted array is:2 3 4 5 1
+The sorted array is:2 3 4 1 5
+The sorted array is:2 3 4 1 5
+The sorted array is:2 3 4 1 5
+The sorted array is:2 3 1 4 5
+The sorted array is:2 3 1 4 5
+The sorted array is:2 1 3 4 5
+The sorted array is:1 2 3 4 5 
+*/

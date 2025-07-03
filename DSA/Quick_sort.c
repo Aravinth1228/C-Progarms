@@ -18,20 +18,23 @@ int main(){
                 a[i]=a[j];
                 a[j]=temp;
             }
-        }
-     }
-
-    printf("The sorted array is:");
-    for(i=0;i<n;i++){
-        printf("%d",a[i]);
+        } printf("The sorted array is:");
+             for(int i=0;i<n;i++){
+               printf("%d",a[i]);
     }
-}/*
+   printf("\n");
+
+}}/*
 Enter the size:5
 Enter the A Array:
-1
-2
-5
 6
 4
-The sorted array is:12456
+1
+2
+3
+The sorted array is:16423
+The sorted array is:12643
+The sorted array is:12364
+The sorted array is:12346
+The sorted array is:12346
 */
