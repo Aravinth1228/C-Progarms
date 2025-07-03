@@ -25,4 +25,13 @@ int main(){
     for(i=0;i<n;i++){
         printf("%d",a[i]);
     }
-}
+}/*
+Enter the size:5
+Enter the A Array:
+1
+2
+5
+6
+4
+The sorted array is:12456
+*/
