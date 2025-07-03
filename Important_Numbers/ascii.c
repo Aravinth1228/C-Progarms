@@ -5,7 +5,7 @@ int main(){
         printf("\n%d :%c",i,i);
     }
     return 0;
-/*
+}
 
 0 :
 1 :

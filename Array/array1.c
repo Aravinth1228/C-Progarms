@@ -7,5 +7,8 @@ int main(){
         printf("\nEnter the Value: ");
         scanf("%d", &a[i]);
     }
+    for(i = 0; i < n; i++){
+        printf("\nThe Value is: %d", a[i]);
+    }
     return 0;
 }
