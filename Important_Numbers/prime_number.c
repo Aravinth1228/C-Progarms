@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int num, i, isPrime = 1;
+    int num,n, i, isPrime = 1;
 
     printf("Enter a number: ");
     scanf("%d", &num);
