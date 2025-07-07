@@ -27,6 +27,7 @@ int main() {
         old = newNode;
     }
 
+   
 
     printf("Singly linked list values:\n");
     temp = head;

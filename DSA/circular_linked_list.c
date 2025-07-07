@@ -28,8 +28,7 @@ int main() {
     }
 
     tail = old;
-    tail->next = head;
-
+    old->next = head;  
     printf("Circular linked list values:\n");
     temp = head;
     do {
