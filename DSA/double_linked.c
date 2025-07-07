@@ -8,7 +8,7 @@ typedef struct node {
 } node;
 
 int main() {
-    int n,i;
+    int n, i;
     node *newNode, *old, *head, *tail, *temp;
 
     printf("Enter the limit: ");
@@ -18,16 +18,18 @@ int main() {
     scanf("%d", &head->data);
     head->next = NULL;
     head->prev = NULL;
-    tail = head;
+    old = head;
 
     for (i = 1; i < n; i++) {
         newNode = (node *)malloc(sizeof(node));       
         scanf("%d", &newNode->data);
         newNode->next = NULL;
-        newNode->prev = tail;
-        tail->next = newNode;
-        tail = newNode;
+        newNode->prev = old;
+        old->next = newNode;
+        old = newNode;
     }
+
+    tail = old;  
 
     printf("Doubly linked list values (forward):\n");
     temp = head;
