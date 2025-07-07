@@ -1,44 +1,42 @@
-// LinkedList
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct Node {
+typedef struct node {
     int data;
-    struct Node* next;
-} list;
+    struct node *next;
+} node;
 
 int main() {
-    int n, i, m;
-    list *head = NULL, *temp = NULL, *tail = NULL, *current = NULL;
-    printf("Enter the Number: ");
+    int n, i;
+    node *newNode, *old, *head, *temp;
+
+    printf("Enter the limit: ");
     scanf("%d", &n);
+    printf("Enter the values:\n");
 
-    for (i = 0; i < n; i++) {
-        temp = (list*)malloc(sizeof(list));
-        if (temp == NULL) {
-            printf("Memory allocation failed\n");
-            return 1;
-        }
-        printf("Enter the data: ");
-        scanf("%d", &m);
-        temp->data = m;
-        temp->next = NULL;
+    head = (node *)malloc(sizeof(node));
+    scanf("%d", &head->data);
+    head->next = NULL;
+    old = head;
 
-        if (head == NULL) {
-            head = temp;
-            tail = temp;
-        } else {
-            tail->next = temp;
-            tail = temp;
-        }
+    for (i = 1; i < n; i++) {
+        newNode = (node *)malloc(sizeof(node));
+        scanf("%d", &newNode->data);
+        newNode->next = NULL;
+        old->next = newNode;
+        old = newNode;
     }
 
-    printf("Linked List: ");
-    current = head;
-    while (current != NULL) {
-        printf("%d -> ", current->data);
-        current = current->next;
+
+    printf("Singly linked list values:\n");
+    temp = head;
+    while (temp != NULL) {
+        printf("%d", temp->data);
+        temp = temp->next;
+        if (temp != NULL)
+            printf(" -> ");
     }
-    printf("NULL\n");
+    printf(" -> NULL\n");
+
     return 0;
 }
