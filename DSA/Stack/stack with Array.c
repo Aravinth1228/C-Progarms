@@ -1,6 +1,6 @@
 #include<stdio.h>
 int top = -1;
-int stack[100];
+int stack[100]; 
 
 void push(int value) {
     if(top == 99) {
@@ -33,6 +33,12 @@ void isEmpty() {
         printf("Stack is not empty\n");
     }
 }
+void printStack() {
+    for(int i = top; i >= 0; i--) {
+        printf("%d -> ", stack[i]);
+    }
+    printf("NULL\n");
+}
 
 int main() {
     int n;
@@ -44,19 +50,16 @@ int main() {
         scanf("%d", &value);
         push(value);
     }
+
     printf("Stack after push operations: ");
-    for(int i = top; i >= 0; i--) {
-        printf("%d -> ", stack[i]);
-    }
-    printf("NULL\n");
+
+    printStack();
     isEmpty();
     peek();
     pop();
     printf("Stack after pop operation: ");
-    for(int i = top; i >= 0; i--) {
-        printf("%d -> ", stack[i]);
-    }
-    printf("NULL\n");
+    
+    printStack();
     return 0;
 }/*Enter the Limit: 5
 Enter the Values:5
