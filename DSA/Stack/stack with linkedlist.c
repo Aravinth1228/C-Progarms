@@ -1,6 +1,6 @@
 // Stack implementation using linked list in C
 #include <stdio.h>
-#include <stdlib.h> // Added for malloc and free
+#include <stdlib.h> 
 
 typedef struct Node {
     int data;
@@ -44,6 +44,14 @@ void pop(){
     top = top->next;
     free(temp);
 }
+void printStack() {
+    Node* current = top;
+    while(current != NULL) {
+        printf("%d -> ", current->data);
+        current = current->next;
+    }
+    printf("NULL\n");
+}
 
 int main(){
     int n;
@@ -57,21 +65,12 @@ int main(){
         push(value);
     }
     printf("Stack after push operations: ");
-    Node* current = top;
-    while(current != NULL) {
-        printf("%d -> ", current->data);
-        current = current->next;
-    }
-    printf("NULL\n");
+    printStack();
     isEmpty();
     peek();
     pop();
     printf("Stack after pop operation: ");
-    current = top;
-    while(current != NULL) {
-        printf("%d -> ", current->data);
-        current = current->next;
-    }
+    printStack();
     printf("NULL\n");
     return 0;
 }/*Enter the Limit: 5
