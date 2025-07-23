@@ -127,3 +127,14 @@ int main() {
     free(deque);
     return 0;
 }
+/*Enter the number of elements: 5
+Enter value to insert at rear: 1
+Enter value to insert at rear: 2
+Enter value to insert at rear: 3
+Enter value to insert at rear: 4
+Enter value to insert at rear: 5
+Deque elements: 1 2 3 4 5 
+Front element deleted: 1
+Rear element deleted: 5
+Deque elements: 2 3 4
+*/
