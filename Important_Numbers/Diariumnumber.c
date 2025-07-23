@@ -13,12 +13,18 @@ int count_digits(int n) {
 void diarium(int n) {
     int num = n;
     int count = count_digits(n);
-    int sum = 0;
+    int digits[10], i = 0;
 
-    for (int i = count; i >= 1; i--) {
-        int digit = num % 10;
-        sum += pow(digit, i);
+    // Store digits in array (from right to left)
+    while (num > 0) {
+        digits[i++] = num % 10;
         num /= 10;
+    }
+
+    int sum = 0;
+    // Calculate sum using correct powers (leftmost digit gets power 1)
+    for (int j = count - 1, p = 1; j >= 0; j--, p++) {
+        sum += pow(digits[j], p);
     }
 
     if (sum == n) {

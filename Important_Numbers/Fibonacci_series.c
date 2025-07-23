@@ -32,3 +32,7 @@ int main()
     }
     return 0;
 }
+/*
+Enter number of terms: 10
+Fibonacci Series: 2 1 3 4 7 11 18 29 47 76 
+*/
